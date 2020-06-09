@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-09T08:20:15.371Z",
+    "end": "2020-06-09T08:20:32.440Z",
+    "duration": 17069,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9f99ccf8-8421-4587-8d5f-4cf2cc58758b",
+      "title": "",
+      "fullFile": "cypress/integration/Forgot_password.js",
+      "file": "cypress/integration/Forgot_password.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4a52148d-2114-4314-a1a7-518af2541eca",
+          "title": "Verify Forgot password?",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check Forgot password?",
+              "fullTitle": "Verify Forgot password? Check Forgot password?",
+              "timedOut": null,
+              "duration": 7878,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://kindlinen01.web.app/login');\ncy.get('input[name=\"email\"]').should('be.visible');\ncy.get('input[name=\"password\"]').should('be.visible');\ncy.get('button[type=\"button\"]').should('be.disabled');\ncy.get('.MuiTypography-root.jss5.MuiTypography-body1').click();",
+              "err": {},
+              "uuid": "698ecdab-eb8f-4c7e-b01e-dc58561703c6",
+              "parentUUID": "4a52148d-2114-4314-a1a7-518af2541eca",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Forgot passowrd screen_2",
+              "fullTitle": "Verify Forgot password? Forgot passowrd screen_2",
+              "timedOut": null,
+              "duration": 3416,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.jss236').contains('Forgot Password?');\ncy.get('.jss235').contains(data.Text);\ncy.get('img[alt=\"Back Button\"]').should('be.visible');\ncy.get('button[type=\"button\"]').contains('Submit');\ncy.get('button[type=\"button\"]').should('be.disabled');\ncy.get('.MuiInputBase-input').type(data.email);\ncy.get('button[type=\"button\"]').should('be.enabled').click();",
+              "err": {},
+              "uuid": "04ac120d-03f0-4137-a31e-2c641f07fa35",
+              "parentUUID": "4a52148d-2114-4314-a1a7-518af2541eca",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "698ecdab-eb8f-4c7e-b01e-dc58561703c6",
+            "04ac120d-03f0-4137-a31e-2c641f07fa35"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11294,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

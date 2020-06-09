@@ -1,0 +1,22 @@
+{    "baseUrl": "https://kl-test-7a657.firebaseapp.com/login",
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout":10000,
+    "pageLoadTimeout":100000,
+    "responseTimeout":60000,
+
+    
+
+
+"reporter": "cypress-multi-reporters",
+"reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+    }
+} 
+}
+    

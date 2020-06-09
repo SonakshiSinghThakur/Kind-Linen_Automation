@@ -1,0 +1,293 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 10,
+    "passes": 7,
+    "pending": 0,
+    "failures": 3,
+    "start": "2020-06-09T06:59:17.142Z",
+    "end": "2020-06-09T07:00:23.316Z",
+    "duration": 66174,
+    "testsRegistered": 10,
+    "passPercent": 70,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "475c4415-5778-449e-8a10-43a4ea66a484",
+      "title": "",
+      "fullFile": "cypress/integration/lead_flow.js",
+      "file": "cypress/integration/lead_flow.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9dbd77b6-87b5-4e63-b804-da4a37c93791",
+          "title": "Lead_flow",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Welcome_Screen",
+              "fullTitle": "Lead_flow Verify Welcome_Screen",
+              "timedOut": null,
+              "duration": 7014,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(data.Lead_url);\ncy.contains('Hey There').should('be.visible');\ncy.contains('price quote for a wholly soul-cleansing').should('be.visible');\ncy.contains('alternative for your linen needs').should('be.visible');\ncy.get('.MuiInputBase-input').type(data.UserName);\ncy.contains('Begin').should('be.enabled').click();\ncy.log('clicked on Begin button');\ncy.wait(1000);\ncy.get(':nth-child(2) > .MuiTypography-root').click();\ncy.wait(1000);",
+              "err": {},
+              "uuid": "322c392a-c074-4df0-be7b-a221de8617ce",
+              "parentUUID": "9dbd77b6-87b5-4e63-b804-da4a37c93791",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify search functionality",
+              "fullTitle": "Lead_flow Verify search functionality",
+              "timedOut": null,
+              "duration": 6409,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.MuiInputBase-input').type('blac');\ncy.wait(1000);\ncy.log('Searching product'); //search functionality\ncy.get('.MuiFab-label').eq(0).click();\ncy.get('.MuiInputBase-input').clear();",
+              "err": {},
+              "uuid": "642a3c17-b4d5-4cb7-afbf-00a42b4520c3",
+              "parentUUID": "9dbd77b6-87b5-4e63-b804-da4a37c93791",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Adding Products to cart from list",
+              "fullTitle": "Lead_flow Adding Products to cart from list",
+              "timedOut": null,
+              "duration": 3963,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.MuiFab-label').eq(2).click();\ncy.wait(1000);\ncy.log('Selected two products from list');\ncy.contains('Quote Me').click();\ncy.log('Successfully clicked on Quote Me');\ncy.wait(2000);",
+              "err": {},
+              "uuid": "ccbe1369-3d27-4905-a562-167a57c20589",
+              "parentUUID": "9dbd77b6-87b5-4e63-b804-da4a37c93791",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Cart page",
+              "fullTitle": "Lead_flow Verify Cart page",
+              "timedOut": null,
+              "duration": 312,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('How many do you need weekly?').should('be.visible');\ncy.log('How many do you need weekly? message is displayed');\ncy.contains('Hit us with your best shot').should('be.visible');\ncy.log('Hit us with your best shot message is displayed');\ncy.contains('Weekly Usage').should('be.visible');\ncy.log('Weekly usage is displayed');",
+              "err": {},
+              "uuid": "2c1a0b8b-55fe-4834-8ed5-30f22cad4e7c",
+              "parentUUID": "9dbd77b6-87b5-4e63-b804-da4a37c93791",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the quotation of selected Products",
+              "fullTitle": "Lead_flow Verify the quotation of selected Products",
+              "timedOut": null,
+              "duration": 5513,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.MuiInputBase-input.MuiInput-input').eq(0).type('0');\ncy.log('Edited the quantity');\ncy.contains('YOU PAY').should('be.visible');\ncy.log('Total amount is displayed');\ncy.contains('Next').click();\ncy.log('Clicked on Next button');\ncy.wait(5000);",
+              "err": {},
+              "uuid": "54bc3ad8-312d-4286-977e-7ee396197012",
+              "parentUUID": "9dbd77b6-87b5-4e63-b804-da4a37c93791",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Tango_screen",
+              "fullTitle": "Lead_flow Verify Tango_screen",
+              "timedOut": null,
+              "duration": 5214,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Ready to Tango?').should('be.visible');\ncy.log('Ready to Tango? message is displayed');\ncy.get('input[type=\"radio\"]').check(['Yes']);\ncy.contains(\"Fucking A! If you'll give us your digits\").should('be.visible');",
+              "err": {},
+              "uuid": "7b10c5ed-1820-4dd0-a046-b97d0079eb06",
+              "parentUUID": "9dbd77b6-87b5-4e63-b804-da4a37c93791",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "When select Yeah,Let's do it",
+              "fullTitle": "Lead_flow When select Yeah,Let's do it",
+              "timedOut": null,
+              "duration": 5014,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"Fucking A! If you'll give us your digits\").should('be.visible');\ncy.contains(\"we'll get this ball rolling...\").should('be.visible');\ncy.get('input[name=\"OrganizationName\"]').type(data.OrganizationName);\ncy.log('Entered Organization Name');\ncy.get('input[name=\"ContactName\"]').should('have.value', data.UserName);\ncy.log('Checked User name');\ncy.get('input[name= \"MobileNumber\"]').type(data.MobileNumber);\ncy.log('Entered Mobile NUmber');\ncy.get('input[name=\"Email\"]').type(data.Email);\ncy.log('Entered Email id');\ncy.get(' img[alt=\"Back Button\"]').should('be.visible');\ncy.log('Back button is visible');\ncy.contains('Submit').click();\ncy.log('Clicked on Submit button');\ncy.wait(2000);",
+              "err": {},
+              "uuid": "8e9e2071-2667-4550-a68c-5194878bfa31",
+              "parentUUID": "9dbd77b6-87b5-4e63-b804-da4a37c93791",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Success_screen",
+              "fullTitle": "Lead_flow Verify Success_screen",
+              "timedOut": null,
+              "duration": 10563,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Swell!!').should('be.visible');\ncy.contains(\"We can't wait to get started!\").should('be.visible');\ncy.contains('Eric is going to hit you up soon to discuss important details').should('be.visible');\ncy.contains(data.AdminName).should('be.visible');\ncy.contains(data.Admin_Id).should('be.visible');\ncy.contains(data.AdminNumber).should('be.visible');\ncy.log(\"Eric's details should be displayed\");\ncy.contains('Refer a Friend').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Swell!!' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Swell!!' but never did.\n    at Context.eval (https://kl-test-7a657.firebaseapp.com/__cypress/tests?p=cypress/integration/lead_flow.js:88:28)",
+                "diff": null
+              },
+              "uuid": "ef622d82-099b-43e4-97dc-2e89ab46442a",
+              "parentUUID": "9dbd77b6-87b5-4e63-b804-da4a37c93791",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Refer_a_Friend_screen",
+              "fullTitle": "Lead_flow Verify Refer_a_Friend_screen",
+              "timedOut": null,
+              "duration": 10804,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Sweet! Preach it!').should('be.visible');\ncy.log('Sweet! Preach it! message to be displayed'); //cy.get(':nth-child(1) > .form_field > .MuiGrid-root ') \n// .should('have.value','Sonakshi Singh')\n//cy.log('Sonakshi Singh  to be displayed in Your Name')\ncy.get(':nth-child(2) > .form_field .MuiGrid-root').type(data[\"Friend's Name\"]);\ncy.get(':nth-child(3) > .form_field > .MuiGrid-root ').type(data.MobileNumber);\ncy.get('img[alt=\"Back Button\"]').should('be.visible');\ncy.log('Back button is visible');\ncy.contains('Text it').click();\ncy.log('Clicked on Tetx it button');\ncy.wait(2000);",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Sweet! Preach it!' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Sweet! Preach it!' but never did.\n    at Context.eval (https://kl-test-7a657.firebaseapp.com/__cypress/tests?p=cypress/integration/lead_flow.js:98:38)",
+                "diff": null
+              },
+              "uuid": "d58e3123-e861-44de-8189-f5694c4d6524",
+              "parentUUID": "9dbd77b6-87b5-4e63-b804-da4a37c93791",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify success screen after Referering a frien",
+              "fullTitle": "Lead_flow Verify success screen after Referering a frien",
+              "timedOut": null,
+              "duration": 10661,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('The deed is done.').should('be.visible');\ncy.contains('Thanks for spreading the word!');\ncy.log('The deed is done. Thanks for spreading the word! message is displayed');\ncy.contains('Refer another Friend').should('be.visible');\ncy.log('Refre Another Friend button is displayed'); //cy.contains('Go Back to Website')\n//.should('be.visible')\n//.click()\ncy.log('Get started again option should be displayed');",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'The deed is done.' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'The deed is done.' but never did.\n    at Context.eval (https://kl-test-7a657.firebaseapp.com/__cypress/tests?p=cypress/integration/lead_flow.js:112:38)",
+                "diff": null
+              },
+              "uuid": "1e82a9ae-b21e-46b8-b884-35c209837051",
+              "parentUUID": "9dbd77b6-87b5-4e63-b804-da4a37c93791",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "322c392a-c074-4df0-be7b-a221de8617ce",
+            "642a3c17-b4d5-4cb7-afbf-00a42b4520c3",
+            "ccbe1369-3d27-4905-a562-167a57c20589",
+            "2c1a0b8b-55fe-4834-8ed5-30f22cad4e7c",
+            "54bc3ad8-312d-4286-977e-7ee396197012",
+            "7b10c5ed-1820-4dd0-a046-b97d0079eb06",
+            "8e9e2071-2667-4550-a68c-5194878bfa31"
+          ],
+          "failures": [
+            "ef622d82-099b-43e4-97dc-2e89ab46442a",
+            "d58e3123-e861-44de-8189-f5694c4d6524",
+            "1e82a9ae-b21e-46b8-b884-35c209837051"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 65467,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+          "reportDir": "cypress/reports/mocha",
+          "quite": true,
+          "overwrite": false,
+          "html": false,
+          "json": true
+        }
+      },
+      "version": "5.1.0"
+    }
+  }
+}
